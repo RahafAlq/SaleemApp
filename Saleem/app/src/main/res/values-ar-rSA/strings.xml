@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">الأعدادات</string>
+    <string name="app_name">سليم</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="invalid_password">كلمة مرور غير صالحة</string>
+    <string name="invalid_username">اسم المستخدم غير صالح</string>
+    <string name="login_failed">فشل تسجيل الدخول</string>
+    <string name="prompt_email">ايميل</string>
+    <string name="prompt_password">كلمة م</string>
+    <string name="action_sign_in">تسجيل الدخول</string>
+    <string name="title_activity_login">تسجسل الدخول</string>
+    <string name="welcome">مرحباً</string>
+
+    <string name="login_btn">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="name">الاسم</string>
+    <string name="signUp">التسجيل</string>
+    <string name="password">كلمة المرور</string>
+    <string name="createAccount"><u>إنشاء حساب</u></string>
+    <string name="enteryourEmail">ادخل البريد الإلكتروني</string>
+    <string name="forgetPassword">نسيت كلمة المرور</string>
+
+    <string name="AreyousureLogout">هل تريد تسجيل الخروج؟</string>
+    <string name="enteryourCPass">أعد ادخال كلمة المرور</string>
+    <string name="enteryourName">ادخل اسمك</string>
+    <string name="enteryourPass">ادخل كلمة المرور</string>
+    <string name="Register">تسجيل</string>
+    <string name="NoresultData">لا توجد بيانات</string>
+    <string name="Thankyou">شكرَا لك</string>
+    <string name="cancel">الغاء</string>
+
+
+    <string name="male">ذكر</string>
+
+    <string name="female">انثى</string>
+    <string name="add_snack">اضافة وجبة خفيفة</string>
+    <string name="add_dinner">اضافة عشاء</string>
+    <string name="add_lunch">اضافة غداء</string>
+    <string name="add_breakfast">اضافة فطور</string>
+
+</resources>

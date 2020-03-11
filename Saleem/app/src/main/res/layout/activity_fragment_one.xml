@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:title="المعلومات"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="wrap_content"
+            android:layout_height="526dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_toolbar"
+                android:fitsSystemWindows="true"
+                android:theme="@style/AppTheme.ProfileTheme"
+                app:elevation="0dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorAccent"
+                    android:gravity="center"
+                    app:title=" "
+                    app:titleTextColor="@color/whiteTextColor" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:id="@+id/nameSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relImg"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="اسم المستخدم :"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameSignUpHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relImg"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/emailSignUp"
+                android:hint="اسم المستخدم"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/emailSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameSignUp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="البريد الإلكتروني: "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailSignUpHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameSignUpHin"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/emailSignUp"
+                android:hint="البريد الالكتروني"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailSignUp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="الوزن:   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/wightHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailSignUpHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/weight"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" wight  "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/heigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="الطول:   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/heighHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wightHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/heigh"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="  hight "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/neededCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heigh"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="السعرات الحرارية:   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/neededCalHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heighHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/neededCal"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" cal "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/neededCal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="الجنس   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/genderHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/neededCalHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/neededCal"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" gender  "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="كتلة الجسم   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bmiHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genderHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/bmi"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" bmi  "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bmi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="العمر   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ageHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bmiHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/age"
+
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" age  "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="المستوى   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/levelHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/level"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" level  "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="الهدف   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/goalHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/goal"
+                android:ems="10"
+                android:gravity="left"
+                android:hint=" goal  "
+                android:textSize="18dp" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="200dp"
+            android:layout_below="@id/rel1"
+            android:layout_marginTop="60dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unclick"
+            android:textColor="@color/whiteTextColor"
+
+            android:text="تسجيل الخروج" />
+
+
+        <Button
+            android:id="@+id/reedit_profile"
+            android:layout_width="200dp"
+            android:layout_below="@id/edit_profile"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unclick"
+            android:textColor="@color/whiteTextColor"
+
+            android:text="تعديل الحساب" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

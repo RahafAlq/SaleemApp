@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+
+
+
+            <TextView
+                android:id="@+id/nameSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relImg"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="اسم المستخدم :"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameSignUpHin"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relImg"
+                android:layout_toLeftOf="@id/emailSignUp"
+                android:layout_marginRight="10dp"
+                android:hint="اسم المستخدم"
+                android:textSize="18dp" />
+
+
+
+            <TextView
+                android:id="@+id/emailSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameSignUp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="البريد الإلكتروني: "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailSignUpHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/emailSignUp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/nameSignUpHin"
+                android:layout_marginTop="25dp"
+                android:hint="البريد الالكتروني"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/infoSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailSignUp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:text="النبذة:   "
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infoUpHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameSignUpHin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/nameSignUp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="   "
+                android:textSize="18dp" />
+
+
+
+        </RelativeLayout>
+
+
+        <!--     <View
+                 android:id="@+id/separator"
+                 android:layout_width="fill_parent"
+                 android:layout_height="1dip"
+                 android:layout_below="@id/rel1"
+                 android:layout_centerVertical="true"
+                 android:layout_marginTop="25dp"
+                 android:background="#A0A0A0"
+                 tools:ignore="NotSibling" />-->
+
+
+        <Button
+            android:id="@+id/edit_profile"
+            android:layout_width="200dp"
+            android:layout_below="@id/rel1"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="@color/whiteTextColor"
+            android:backgroundTint="@color/whiteTextColor"
+            android:text="تعديل الملف الشخصي" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

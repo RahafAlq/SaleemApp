@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.registerThreeActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_toolbar"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.ProfileTheme"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center"
+                app:title=" "
+                app:titleTextColor="@color/whiteTextColor" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="الخطوة 3/4"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="حدد مستوى لياقتك"
+                android:textAlignment="center"
+                android:textColor="#D0565A5A"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/levelOneBtn"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/register_btn"
+                android:text="مبتدى"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/levelTwoBtn"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/register_btn"
+                android:text="متوسط"
+                android:textColor="#fff"
+                android:textSize="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/levelThreeBtn"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/register_btn"
+                android:text="متقدم"
+                android:textColor="#fff"
+                android:textSize="20dp"
+
+                />
+
+
+            <Button
+                android:id="@+id/nxtThreeBtn"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/rounded_corner"
+                android:text="التالي"
+                android:textColor="#fff"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

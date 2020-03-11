@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scanner_add_dialogbox_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scanner_add_dialogbox_shape"
+        android:backgroundTint="#6A18FFFF"
+        android:fontFamily="@font/gilda_display"
+        android:gravity="center"
+        android:text="معلومات المنتج"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"></TextView>
+    <!--company name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم المنتج:"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/productName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هلا"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+            />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#12111111"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم الشركة:"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/productCompany1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هلا"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#12111111"/>
+    <!--Portion-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حجم الحصة:"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/productServingSizeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="100 مل"
+                android:textSize="15dp">
+
+            </TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#12111111"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+          >
+
+            <TextView
+                android:id="@+id/productNumberOfServings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عدد الحصص:"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/productNumberOfServingsEditText"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#22111111"
+                android:background="@drawable/scanner_add_dialogbox_shape"
+                android:layout_marginRight="20dp"
+                android:hint="1"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#12111111"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="25"
+            android:background="@drawable/calori_ring"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="450"
+                android:gravity="center"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="سعرة"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="25"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text="10جم"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="دهون"
+                android:textColor="#D81B60"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/protin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40جم"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بروتين"
+                android:textColor="#00897B"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30جم"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/carb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نشويات"
+                android:textColor="#1E88E5"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#12111111"/>
+    <!-- Button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_buttons"
+            android:backgroundTint="#EBA4EB50"
+            android:text="إضافة"
+            android:textSize="15dp"
+            android:textColor="#F7FFFFFF">
+
+        </Button>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_buttons"
+            android:backgroundTint="#C91317"
+            android:textSize="15dp"
+            android:text="إلغاء"
+            android:textColor="#F7FFFFFF"
+
+            ></Button>
+    </LinearLayout>
+
+
+
+</LinearLayout>

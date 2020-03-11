@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/exercise"
+        android:title="التمارين"
+        android:icon="@drawable/ic_dumbbell"/>
+    <item
+        android:id="@+id/profile"
+        android:title="حسابي "
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="الرئيسية "
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/meals"
+        android:title="الوصفات"
+        android:icon="@drawable/ic_dish"/>
+
+</menu>

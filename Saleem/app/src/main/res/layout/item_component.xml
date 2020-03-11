@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/addIngredientcomp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/spFood"
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="30dp">
+
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/spWeight"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="8dp">
+
+        </TextView>
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/et_number"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:backgroundTint="#5E3A3333"
+            android:inputType="number"
+            android:maxLength="5"
+            android:background="@drawable/border" />
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            />
+    </LinearLayout>
+</LinearLayout>

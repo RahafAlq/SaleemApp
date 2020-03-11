@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="60dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="60dp">
+
+    <item
+        android:drawable="@drawable/ic_water_glass"
+        android:alpha="0.5" />
+
+    <item
+        android:bottom="60dp"
+        android:left="50dp"
+        android:drawable="@drawable/ic_add" />
+
+</layer-list>

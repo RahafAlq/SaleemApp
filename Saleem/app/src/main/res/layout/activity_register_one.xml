@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="الخطوة 1/4"
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="أنشاء حساب"
+            android:textAlignment="center"
+            android:textColor="#D0565A5A"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:errorEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/nameET"
+                android:layout_width="342dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="الأسم"
+                android:inputType="text"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:errorEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/emailET"
+                android:layout_width="342dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="الإيميل"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/passwordED"
+                android:layout_width="344dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-11dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                app:passwordToggleEnabled="true"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/repasswordED"
+                android:layout_width="344dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-11dp"
+                android:layout_marginEnd="20dp"
+
+                android:ems="10"
+                android:hint="اعادة كلمة المرور"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                app:passwordToggleEnabled="true"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/nxtOneBtn"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_corner"
+            android:text="التالي"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            >
+
+
+
+            <TextView
+                android:id="@+id/signUpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:textColor="#535252"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/action_sign_in"
+
+                android:textSize="20dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/signUpBtn"
+                android:background="#C9C5C5"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/signUpBtn"
+                android:background="#C9C5C5"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

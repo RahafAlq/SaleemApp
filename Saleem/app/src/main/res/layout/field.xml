@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/linearinsidemain" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <pl.utkala.searchablespinner.SearchableSpinner android:layout_height="30dp" android:layout_width="0dp" android:id="@+id/IngredientNames" app:dialogTitle="اختر المقدار" app:closeText="إلغاء" android:entries="@array/Ingredients" android:layout_weight="3" android:layout_marginLeft="30dp"/>
+
+    <Spinner android:layout_height="30dp" android:layout_width="0dp" android:id="@+id/unit" android:entries="@array/Quantities" android:layout_weight="3" android:layout_marginLeft="50dp"> </Spinner>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/quantity" android:layout_weight="2" android:background="@drawable/border" android:gravity="center" android:hint="100" android:inputType="number" android:backgroundTint="#2F3A3333"/>
+
+    <Button android:layout_height="40dp" android:layout_width="0dp" android:id="@+id/delete_button" android:layout_weight="1" android:background="@android:drawable/ic_delete" android:onClick="onDelete"/>
+
+</LinearLayout>

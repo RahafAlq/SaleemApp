@@ -1,0 +1,279 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:toolbarId="@+id/toolbar" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_collapseMode="parallax"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_weight="1.5"
+                app:layout_collapseMode="none"
+                android:background="@drawable/ic_bg_c">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_chevron_left_black_24dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_chevron_right_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="02/02/2020"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <!--                <fragment-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerInParent="true"-->
+                <!--                    android:name="sa.ksu.gpa.saleem.StepsCounterFragment"-->
+                <!--                    />-->
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:elevation="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/viewPager"
+
+                    />
+                <!--                <com.make.dots.dotsindicator.DotsIndicator-->
+                <!--                    android:id=”@+id/dotsIndicator”-->
+                <!--                android:layout_width=”wrap_content”-->
+                <!--                android:layout_height=”wrap_content”-->
+                <!--                android:layout_marginBottom=”12dp”-->
+                <!--                android:background=”@drawable/dots_background”-->
+                <!--                android:padding=”6dp”-->
+                <!--                app:dot_drawable=”@drawable/ic_dot_darkgrey”-->
+                <!--                app:dot_drawable_unselected=”@drawable/ic_dot_lightgrey”-->
+                <!--                app:dot_height=”8dp”-->
+                <!--                app:dot_margin=”6dp”-->
+                <!--                app:dot_width=”8dp” />-->
+
+                <ProgressBar
+
+                    android:id="@+id/pb_counter"
+                    android:visibility="gone"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circular_shape"
+                    android:progress="0"
+
+                    android:progressDrawable="@drawable/circle"
+                    android:rotation="180" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_main_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_main_number"
+                        android:text="سعرات المتبقية"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="4dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/LinearLayout1"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/remainder_cal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="0"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="سعرة مستهلكة"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:textStyle="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="8dp"
+
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/waterAmountTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="0"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="كوب ماء"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:textStyle="" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout3"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="24dp"
+                                android:layout_height="18dp"
+                                android:padding="4dp"
+                                android:text="100"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="السعرة المحروقة"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:textStyle="" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <com.make.dots.dotsindicator.DotsIndicator
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/dotsIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:padding="6dp"
+                        app:dot_height="8dp"
+                        app:dot_margin="6dp"
+                        app:dot_width="8dp"
+                        app:dot_drawable="@drawable/white_circle"
+                        app:dot_drawable_unselected="@drawable/color_accent_circle"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/viewPager"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/fragment_home_body"/>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

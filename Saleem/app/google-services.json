@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "328880008786",
+    "firebase_url": "https://saleem-6885a.firebaseio.com",
+    "project_id": "saleem-6885a",
+    "storage_bucket": "saleem-6885a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328880008786:android:e3c04e9dbd5abac447398b",
+        "android_client_info": {
+          "package_name": "sa.ksu.gpa.saleem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328880008786-6qjje6cd4l0c4iubvnonagjfotjuh5kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sa.ksu.gpa.saleem",
+            "certificate_hash": "8f9af6541e44f12f99d90436d9501b31f9b74f4e"
+          }
+        },
+        {
+          "client_id": "328880008786-kg0g0bvu9uite1j537sondlcclu5sljd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqNMEaPQCxuocdpkvtPQMlk9UW-dz11Ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328880008786-kg0g0bvu9uite1j537sondlcclu5sljd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

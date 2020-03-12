@@ -6,10 +6,17 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:text="شارك نصيحتك">
 
+</TextView>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dialogAdviceET"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
         app:counterMaxLength="140"
@@ -20,7 +27,8 @@
             android:layout_height="300dp"
             android:gravity="top"
             android:background="@drawable/border"
-            android:hint="   النصيحة"
+            android:padding="5dp"
+            android:hint=" النصيحة"
             android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +51,7 @@
             android:layout_gravity="center"
             android:background="@drawable/border"
             android:backgroundTint="#341A1818"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:text="إلغاء"
             android:textColor="#F7FFFFFF"></Button>
         <Button
@@ -53,9 +61,9 @@
             android:layout_margin="10dp"
             android:background="@drawable/border"
             android:layout_weight="0.5"
-            android:backgroundTint="#69F0AE"
+            android:backgroundTint="#59E7A2"
             android:text="نشر"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textColor="#F7FFFFFF"></Button>
 
     </LinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikhaellopez:circularprogressbar:3.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1eddce0ebac8645a7e78f076cdea94c/circularprogressbar-3.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1eddce0ebac8645a7e78f076cdea94c/circularprogressbar-3.0.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikhaellopez/circularprogressbar/3.0.3/84fcf61f9bfdd8a8a5eaab276779b328f92c6813/circularprogressbar-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

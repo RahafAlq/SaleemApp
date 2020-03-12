@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.leinardi:FloatingActionButtonSpeedDial:master-SNAPSHOT@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/565dd65c6337838560347581d7a49315/FloatingActionButtonSpeedDial-master-SNAPSHOT/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/565dd65c6337838560347581d7a49315/FloatingActionButtonSpeedDial-master-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/565dd65c6337838560347581d7a49315/FloatingActionButtonSpeedDial-master-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.leinardi/FloatingActionButtonSpeedDial/master-SNAPSHOT/1c5847e43dd86c24f89552d13dbd535c48a4482a/FloatingActionButtonSpeedDial-master-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.leinardi/FloatingActionButtonSpeedDial/master-SNAPSHOT/49e4d2f1643066b1a662f77c658066f354c698d5/FloatingActionButtonSpeedDial-master-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

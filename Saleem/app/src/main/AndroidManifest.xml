@@ -18,6 +18,11 @@
         </activity>
         <activity android:name=".recipe.sharedRecipeInformaion"></activity>
         <activity android:name=".recipe.ShareRecipeFirst">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity android:name=".register.registerOneActivity"></activity>
@@ -39,11 +44,7 @@
             android:name=".SplashScreenActivity"
             android:noHistory="true"
             android:theme="@style/splashTheme">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
 
 
         </activity>

@@ -16,7 +16,7 @@
 </TextView>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dialogAdviceET"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
         app:counterMaxLength="140"
@@ -24,11 +24,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:gravity="top"
+            android:layout_height="wrap_content"
+            android:gravity="right"
             android:background="@drawable/border"
+            android:textColor="#111"
             android:padding="5dp"
-            android:hint=" النصيحة"
             android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>

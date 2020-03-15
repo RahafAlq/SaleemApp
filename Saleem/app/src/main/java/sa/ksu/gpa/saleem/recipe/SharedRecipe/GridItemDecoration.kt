@@ -1,4 +1,4 @@
-package sa.ksu.gpa.saleem.recipe
+package sa.ksu.gpa.saleem.recipe.SharedRecipe
 
 import android.graphics.Rect
 import android.view.View

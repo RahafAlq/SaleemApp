@@ -223,10 +223,11 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/burnt_calories_textview"
                                 android:layout_width="24dp"
                                 android:layout_height="18dp"
                                 android:padding="4dp"
-                                android:text="100"
+                                android:text="0"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />

@@ -14,8 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AddFoodActivity"></activity>
-        <activity android:name=".recipe.viewSharedRecipeActivity">
+        <activity android:name=".recipe.SharedRecipe.viewSharedRecipeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".recipe.sharedRecipeInformaion"></activity>
         <activity android:name=".recipe.ShareRecipeFirst">
@@ -33,11 +37,7 @@
         <activity android:name=".profile.fragmentOne" />
 
         <activity android:name=".loginn" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".register.registerFourActivity"
             android:parentActivityName=".register.registerThreeActivity"/>

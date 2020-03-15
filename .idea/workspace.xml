@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce701abf-2303-4968-96e2-72c1610cc5a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/assets/fonts/ArbFONTS-GE-SS-Two-Light_28.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/assets/fonts/ArbFONTS-GE_SS_Two_Light-1.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/assets/fonts/ArbFONTS-GE_SS_Two_Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/assets/fonts/LHLamarPro-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/java/sa/ksu/gpa/saleem/font/CustomFontApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saleem/app/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Saleem/app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saleem/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saleem/app/src/main/res/values-ar-rSA/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/src/main/res/values-ar-rSA/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saleem/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saleem/app/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saleem/app/src/main/res/layout/home_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Saleem/app/src/main/res/layout/home_fragment.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,9 +30,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SaleemApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SaleemApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -90,19 +92,19 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.17989418" visible="true" weight="0.3298887" />
-      <window_info id="Structure" order="2" sideWeight="0.8201058" side_tool="true" visible="true" weight="0.3298887" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.17724867" visible="true" weight="0.3298887" />
+      <window_info id="Structure" order="2" sideWeight="0.82275134" side_tool="true" visible="true" weight="0.3298887" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3285968" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />

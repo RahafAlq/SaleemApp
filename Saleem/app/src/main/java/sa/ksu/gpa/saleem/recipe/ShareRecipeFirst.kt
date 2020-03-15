@@ -201,16 +201,34 @@ class ShareRecipeFirst : AppCompatActivity(), View.OnClickListener {
 
         if (checkBox.isChecked==true)
             type = checkBox!!.text.toString()
+        else{
+            type="not"
+        }
         if (checkBox1.isChecked==true)
             type1 = checkBox1!!.text.toString()
+        else{
+            type1="not"
+        }
         if (checkBox2.isChecked==true)
             type2 =checkBox2!!.text.toString()
+        else{
+            type2="not"
+        }
         if (checkBox3.isChecked==true)
             type3 =checkBox3!!.text.toString()
+        else{
+            type3="not"
+        }
         if (checkBox4.isChecked==true)
             type4 =checkBox4!!.text.toString()
+        else{
+            type4="not"
+        }
         if (checkBox5.isChecked==true)
             type5 =checkBox5!!.text.toString()
+        else{
+            type5="not"
+        }
 
         val currentuser ="AXBFsLC5GeTGHkCDz8oz"
         val docData = hashMapOf(

@@ -3,18 +3,15 @@ package sa.ksu.gpa.saleem
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.provider.ContactsContract
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import androidx.appcompat.app.AlertDialog
@@ -34,9 +31,8 @@ import kotlinx.android.synthetic.main.advice_dialog.view.*
 import kotlinx.android.synthetic.main.fragment_home_body.*
 import kotlinx.android.synthetic.main.home_fragment.*
 import sa.ksu.gpa.saleem.profile.Profile
-import sa.ksu.gpa.saleem.profile.fragmentOne
 import sa.ksu.gpa.saleem.recipe.ShareRecipeFirst
-import sa.ksu.gpa.saleem.recipe.viewSharedRecipeActivity
+import sa.ksu.gpa.saleem.recipe.SharedRecipe.viewSharedRecipeActivity
 import java.util.ArrayList
 
 
@@ -46,6 +42,8 @@ class MainActivity : AppCompatActivity() {
     private var addExcercize: Button? = null
     private lateinit var db:FirebaseFirestore
     private var counter=0
+    val currentuser = FirebaseAuth.getInstance().currentUser!!.uid
+
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,9 +60,6 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.profile-> {
                     title="حسابي"
-                    //this is for show profile fragment
-              // loadFragment(fragmentOne())
-
                     val intent = Intent(this@MainActivity, Profile::class.java)
                     startActivity(intent)
 
@@ -72,8 +67,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.meals-> {
                     title = "وصفات"
-                    //this is for show profile fragment
-                    // loadFragment(fragmentOne())
 
                     val intent = Intent(this@MainActivity, viewSharedRecipeActivity::class.java)
                     startActivity(intent)
@@ -86,19 +79,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         showAddAdvice()
-        /*btn = findViewById(R.id.fortesting) as Button
 
-        btn!!.setOnClickListener {
-            val permisison= ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-
-            val intent = Intent(this@MainActivity, ScanActivity::class.java)
-            if(permisison!= PackageManager.PERMISSION_GRANTED){
-                makeRequest()
-
-            }
-
-            else startActivity(intent)
-        }*/
 
         val speedDialView = findViewById<SpeedDialView>(R.id.speedDial)
         speedDialView.addActionItem(
@@ -160,15 +141,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         })
-//        findViewById<ImageView>(R.id.ivAddView).setOnClickListener { addFood() }
 
-
-       /* addExcercize = findViewById(R.id.fortestingadd) as Button
-
-        addExcercize!!.setOnClickListener {
-            addExcercizeDialog()
-
-        }*/
 
         // set on-click listener
         addWaterBtn.setOnClickListener {
@@ -265,7 +238,7 @@ class MainActivity : AppCompatActivity() {
         val fragment = ItemListDialogFragmentA(data)
         val bundle = Bundle()
         bundle.putStringArrayList("item_data", data)
-        this.supportFragmentManager?.let { fragment.show(it, "tag") }
+        this.supportFragmentManager.let { fragment.show(it, "tag") }
         fragment.setOnSelectData(object : ItemListDialogFragmentA.Listener {
             override fun onItemClicked(position: Int) {
 
@@ -295,22 +268,38 @@ class MainActivity : AppCompatActivity() {
         val  mAlertDialog = mBuilder.show()
         mAlertDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
         var burnt = mDialogView.addExcerciseburentCal!!.text
-        val workoutName = mDialogView.addExcerciseWorkoutname!!.text
+        val workoutName = mDialogView.addExcerciseWorkoutname!!.text.toString()
         Log.d("this",""+burnt+workoutName)
 
         mDialogView.addExcercise.setOnClickListener{
 
 
-            if (burnt==null||workoutName==null){
+            if (burnt==null){
 
                 mDialogView.addExcerciseError.setText("الرجاء ادخال المعلومات الناقصة")
             }
             else{
-                var  burnt1 = burnt!!.toString()
+                var  burnt1 = burnt.toString()
                 var burntcal=burnt1.toDouble()
-                val currentuser = FirebaseAuth.getInstance().currentUser!!.uid
                 val burntCalories = db.collection("Users").document(currentuser)
+
                 burntCalories.update("burntCalories", FieldValue.increment(burntcal))
+               // adding a list of excercises
+                val docData = hashMapOf(
+                        "exerciseName" to workoutName,
+                        "exerciseCalories" to burntcal
+
+                )
+                db.collection("Users").document(currentuser).collection("Exercises").document().set(docData).addOnSuccessListener {
+                    Log.d("main","Addid to collection")
+                }.addOnFailureListener {
+                    Log.d("main","not Addid to collection"+it)
+
+                }
+
+                ubdateBurntCaloris()
+
+
                 Toast.makeText(applicationContext,"تمت اضافة المنتج", LENGTH_LONG)
                 mAlertDialog.dismiss()
 
@@ -322,6 +311,16 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    private fun ubdateBurntCaloris() {
+        db.collection("Users").document(currentuser).get().addOnSuccessListener {
+            if (it.get("burntCalories")!=0)
+                burnt_calories_textview.text=it.get("burntCalories").toString()
+            else
+                burnt_calories_textview.text="0"
+
+        }
     }
 
     private fun makeRequest() {

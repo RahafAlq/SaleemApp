@@ -6,21 +6,35 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="sharedRecipeInformaion" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9f04caa-c809-4b70-8bd6-0f774ea4bc84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/assets/fonts/ArbFONTS-GE-SS-Two-Light_28.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/fonts/ArbFONTS-GE_SS_Two_Light-1.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/fonts/ArbFONTS-GE_SS_Two_Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/assets/fonts/LHLamarPro-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/CustomFontApp.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/SaleemApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipesAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/recipe_info_rectangluer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_viewsharedrecipe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/shared_recipe_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/sharedrecipe_cardview.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values-ar-rSA/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values-ar-rSA/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/GridItemDecoration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/GridItemDecoration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/RecipeModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipeModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/ShareRecipeFirst.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/ShareRecipeFirst.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/recipeListStaggeredAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeInformaion.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeInformaion.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeViewHolder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/viewSharedRecipeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/viewSharedRecipeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout-ar/activity_shared_recipe_informaion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout-ar/activity_view_shared_recipe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout-ar/recipe_itam_viewshared.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_shared_recipe_informaion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_view_shared_recipe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/home_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/home_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/recipe_itam_viewshared.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,52 +59,69 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/CustomFontApp.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/viewSharedRecipeActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="44">
+              <caret line="93" selection-start-line="93" selection-end-line="110" selection-end-column="17" />
               <folding>
-                <element signature="e#32#95#0" expanded="true" />
+                <element signature="e#47#702#0" expanded="true" />
+                <element signature="e#1180#2003#2" />
+                <element signature="e#2038#2374#0" />
+                <element signature="e#3917#5019#0" />
+                <element signature="e#5133#5280#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeInformaion.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values-ar-rSA/styles.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/shared_recipe_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="197">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/recipe_info_rectangluer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/ShareRecipeFirst.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="229" column="17" selection-start-line="229" selection-start-column="17" selection-end-line="229" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipesAdapter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+              <folding>
+                <element signature="e#47#536#0" expanded="true" />
+                <element signature="e#1818#2931#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,7 +132,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin File" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -119,10 +153,21 @@
         <option value="$PROJECT_DIR$/src/main/res/values/fonts.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.java" />
         <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.kt" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/CustomFontApp.kt" />
         <option value="$PROJECT_DIR$/src/main/res/values-ar-rSA/styles.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/home_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/sharedrecipe_cardview.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_viewsharedrecipe.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/viewSharedRecipeActivity.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipeModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipesAdapter.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/ShareRecipeFirst.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeInformaion.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/drawable/recipe_info_rectangluer.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/shared_recipe_info.xml" />
       </list>
     </option>
   </component>
@@ -138,6 +183,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Source Files'; set:Project Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$SourceFilesScope">
           <expand>
@@ -183,55 +265,32 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="saleem" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="saleem" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="recipe" type="462c0819:PsiDirectoryNode" />
+              <item name="SharedRecipe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="fonts" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Saleem" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -242,23 +301,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="GVVDU18B26002253" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-12T15:05:21.998Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-13T11:05:34.735Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/assets/fonts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SearchRecyclerViewExample-master/SearchRecyclerViewExample-master" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fatimah\Desktop\SaleemApp\Saleem\app\src\main" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="sa.ksu.gpa.saleem.recipe.SharedRecipe" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\fatimah\Desktop\SaleemApp\Saleem\app\src\main\assets\fonts" />
       <recent name="C:\Users\fatimah\Desktop\SaleemApp\Saleem\app\src\main\java\sa\ksu\gpa\saleem" />
       <recent name="C:\Users\fatimah\Desktop\SaleemApp\Saleem\app\src\main\assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\fatimah\Desktop\SaleemApp\Saleem\app\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584010718903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Feat: changing the font">
+      <created>1584025753962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584025753963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -368,7 +437,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32064778" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -376,52 +445,67 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.5559503" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.22557727" />
+      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.21314387" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.38898757" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3623446" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.19838056" />
+      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.2" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2874494" />
-      <window_info id="Structure" order="1" side_tool="true" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Build Variants" order="6" side_tool="true" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3222672" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
-      <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="0" />
-      <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info anchor="bottom" id="Logcat" order="2" weight="0.12255773" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.43161634" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.25754884" />
+      <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.053285968" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.1793961" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.19838056" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.19757085" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FiX" />
-    <option name="LAST_COMMIT_MESSAGE" value="FiX" />
+    <MESSAGE value="Feat: changing the font" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: changing the font" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipesAdapter.kt</url>
+          <line>37</line>
+          <properties class="sa.ksu.gpa.saleem.recipe.SharedRecipe.RecipesAdapter" method="getItemCount">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/icon_shape_circuler_two.xml">
@@ -434,14 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/add_excercise_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
@@ -491,14 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/font/FontsOverride.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -518,10 +586,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values-ar-rSA/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="227">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/home_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="229" column="46" selection-start-line="229" selection-start-column="46" selection-end-line="229" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/add_excercise_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/recipeListStaggeredAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeViewHolder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/recipe_itam_viewshared.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout-ar/activity_view_shared_recipe.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/GridItemDecoration.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="e#2066#3122#2" />
+            <element signature="e#5121#6194#2" />
+            <element signature="e#6361#6585#0" />
+            <element signature="e#6612#6976#0" />
+            <element signature="e#7004#7168#0" />
+            <element signature="e#7204#8456#0" />
+            <element signature="e#8489#9046#0" />
+            <element signature="e#9094#9465#0" />
+            <element signature="e#9490#10040#0" />
+            <element signature="e#10079#11920#0" />
+            <element signature="e#11959#12249#0" />
+            <element signature="e#12281#12393#0" />
+            <element signature="e#12509#12988#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="e#424#954#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/sharedrecipe_cardview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_viewsharedrecipe.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/viewSharedRecipeActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="93" selection-start-line="93" selection-end-line="110" selection-end-column="17" />
+          <folding>
+            <element signature="e#47#702#0" expanded="true" />
+            <element signature="e#1180#2003#2" />
+            <element signature="e#2038#2374#0" />
+            <element signature="e#3917#5019#0" />
+            <element signature="e#5133#5280#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipeModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/SharedRecipe/RecipesAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <folding>
+            <element signature="e#47#536#0" expanded="true" />
+            <element signature="e#1818#2931#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/ShareRecipeFirst.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="229" column="17" selection-start-line="229" selection-start-column="17" selection-end-line="229" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/recipe_info_rectangluer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sa/ksu/gpa/saleem/recipe/sharedRecipeInformaion.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/shared_recipe_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

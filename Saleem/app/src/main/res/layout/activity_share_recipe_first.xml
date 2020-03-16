@@ -144,33 +144,93 @@
 
 </LinearLayout>
 
-    <View android:layout_height="1dp" android:layout_width="match_parent" android:background="#12111111" android:layout_gravity="center"/>
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#12111111"
+        android:layout_gravity="center"/>
 
 
-    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="19dp" android:layout_marginTop="10dp" android:text="المقادير" android:textStyle="bold"> </TextView>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:layout_marginTop="10dp"
+        android:text="المقادير"
+        android:textStyle="bold"> </TextView>
 
-    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/main"> </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/main">
+    </LinearLayout>
 
-    <Button android:layout_height="50dp" android:layout_width="100dp" android:gravity="center" android:background="@drawable/border" android:id="@+id/addIngredient" android:alpha="0.5" android:backgroundTint="#448AFF" android:layout_gravity="center" android:layout_marginTop="5dp" android:textColor="#F8F8F8" android:text="إضافة"/>
+    <Button android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:id="@+id/addIngredient"
+        android:alpha="0.5"
+        android:backgroundTint="#448AFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#F8F8F8"
+        android:text="إضافة"/>
 
 </LinearLayout>
 
-    <View android:layout_height="1dp" android:layout_width="match_parent" android:background="#12111111" android:layout_gravity="center" android:layout_marginTop="10dp"/>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#12111111"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
 
 
-    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center">
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="center">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:textSize="19dp" android:layout_marginTop="10dp" android:text="طريقة الإعداد" android:textStyle="bold" android:layout_weight="100"> </TextView>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:layout_marginTop="10dp"
+        android:text="طريقة الإعداد"
+        android:textStyle="bold"
+        android:layout_weight="100">
+    </TextView>
 
-    <EditText android:scrollbars="vertical" android:layout_height="350dp" android:layout_width="350dp" android:gravity="top" android:background="@drawable/border" android:id="@+id/prepration" android:layout_gravity="center" android:hint="1- يقطع البصل ويشوح على المقلاة " android:padding="10dp" android:layout_weight="100"> </EditText>
+    <EditText
+        android:scrollbars="vertical"
+        android:layout_height="350dp"
+        android:layout_width="350dp"
+        android:gravity="top"
+        android:background="@drawable/border"
+        android:id="@+id/prepration"
+        android:layout_gravity="center"
+        android:hint="1- يقطع البصل ويشوح على المقلاة "
+        android:padding="10dp"
+        android:layout_weight="100"> </EditText>
 
 </LinearLayout>
 
 
     -<LinearLayout
-    android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:layout_marginTop="15dp">
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="15dp">
 
     <Button
         android:layout_height="50dp"

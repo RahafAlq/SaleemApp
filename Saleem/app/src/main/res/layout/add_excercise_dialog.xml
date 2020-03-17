@@ -80,7 +80,7 @@ android:layout_weight="0.5"
         android:layout_gravity="center"
         android:background="@drawable/border"
         android:backgroundTint="#341A1818"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:text="إلغاء"
         android:textColor="#F7FFFFFF"></Button>
     <Button
@@ -90,9 +90,9 @@ android:layout_weight="0.5"
         android:layout_margin="10dp"
         android:background="@drawable/border"
         android:layout_weight="0.5"
-        android:backgroundTint="#69F0AE"
+        android:backgroundTint="#59E7A2"
         android:text="إضافة"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:textColor="#F7FFFFFF">
 
     </Button>

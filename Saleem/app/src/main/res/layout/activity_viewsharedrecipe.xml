@@ -1,38 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchView"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text1"
+        android:textColor="#639865"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="اكتشف"
+        android:textStyle="bold"
+        android:textSize="40dp"
+
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/text"
+        android:textColor="#9F639865"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#2D111111"
+        android:text="أشهى الوصفات"
+        android:textSize="25dp"
+
+
+        >
+
+    </TextView>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_below="@+id/text"
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:background="@drawable/searchview_shape"
+        android:backgroundTint="#1D111111"
         android:textCursorDrawable="@null"
         app:iconifiedByDefault="false"
-        app:queryBackground="@null" />
+        app:queryBackground="@null"
+        app:queryHint="ابحث" />
+    <com.glide.slider.library.SliderLayout
+        parent="Base.CardView"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="50dp"
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:minHeight="30dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        />
+    <com.glide.slider.library.indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/slider"
         android:id="@+id/recyclerViewRecipes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom='true'
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
 
 
         />
 
+
+</RelativeLayout>
+</ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
         android:background="@color/colorLightGray"
         app:itemIconTint="@color/bottom_nav_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:itemTextColor="@color/bottom_nav_color"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_nav_menu" />
-</LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom='true'  />
+</RelativeLayout>

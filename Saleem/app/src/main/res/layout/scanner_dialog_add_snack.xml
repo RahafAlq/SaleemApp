@@ -9,11 +9,8 @@
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:backgroundTint="#1111"
         android:gravity="center"
         android:text="معلومات المنتج"
-        android:textColor="@color/colorWhite"
         android:textSize="30dp"></TextView>
     <!--company name-->
     <LinearLayout
@@ -109,40 +106,9 @@
 
             </TextView>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:background="#12111111"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="10dp"
-            >
 
-            <TextView
-                android:id="@+id/productNumberOfServings"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="عدد الحصص:"
-                android:textSize="20dp">
 
-            </TextView>
-
-            <EditText
-                android:id="@+id/productNumberOfServingsEditText"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:backgroundTint="#22111111"
-                android:background="@drawable/scanner_add_dialogbox_shape"
-                android:layout_marginRight="20dp"
-                android:hint="1"
-                android:gravity="center"
-                android:textSize="15dp"
-                android:inputType="number" />
-        </LinearLayout>
 
     </LinearLayout>
     <View
@@ -282,10 +248,9 @@
             android:layout_weight="50"
             android:layout_margin="10dp"
             android:background="@drawable/border"
-            android:alpha="0.5"
-            android:backgroundTint="#448AFF"
+            android:backgroundTint="#59E7A2"
             android:text="إضافة"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textColor="#F7FFFFFF">
 
         </Button>
@@ -297,8 +262,8 @@
             android:layout_weight="50"
             android:layout_margin="10dp"
             android:background="@drawable/border"
-            android:backgroundTint="#5E111111"
-            android:textSize="15dp"
+            android:backgroundTint="#341A1818"
+            android:textSize="20dp"
             android:text="إلغاء"
             android:textColor="#F7FFFFFF"
 

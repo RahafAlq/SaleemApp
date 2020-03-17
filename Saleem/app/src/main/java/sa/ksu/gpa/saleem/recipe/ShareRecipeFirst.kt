@@ -44,6 +44,7 @@ class ShareRecipeFirst : AppCompatActivity(), View.OnClickListener {
     private lateinit var addIngrediant:Button
     private lateinit var main:LinearLayout
     private lateinit var uri:String
+    private lateinit var backButton:  ImageView
 
 
 
@@ -72,12 +73,15 @@ class ShareRecipeFirst : AppCompatActivity(), View.OnClickListener {
         IngredientNames= findViewById(R.id.IngredientNames)
         unit= findViewById(R.id.unit)
         main=findViewById(R.id.main) //to add ings dirctly
+        backButton= findViewById(R.id.back_button)
+
 
 
 
         image.setOnClickListener(this)
         addIngrediant.setOnClickListener(this)
         publishRecipe.setOnClickListener(this)
+        backButton.setOnClickListener(this)
 
 
 
@@ -93,6 +97,9 @@ class ShareRecipeFirst : AppCompatActivity(), View.OnClickListener {
             }
             R.id.publishRecipe->{
                 addRecipe()
+                finish()
+            }
+   R.id.back_button->{
                 finish()
             }
 

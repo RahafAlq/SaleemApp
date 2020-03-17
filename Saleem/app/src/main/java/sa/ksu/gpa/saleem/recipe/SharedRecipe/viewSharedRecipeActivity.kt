@@ -6,33 +6,45 @@ import android.os.Bundle
 import android.util.Log
 import android.util.TypedValue
 import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.*
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
+import androidx.recyclerview.widget.RecyclerView.VERTICAL
+import com.bumptech.glide.request.RequestOptions
+import com.glide.slider.library.SliderLayout
+import com.glide.slider.library.animations.DescriptionAnimation
+import com.glide.slider.library.slidertypes.BaseSliderView
+import com.glide.slider.library.slidertypes.TextSliderView
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_main.bottomNavigation
 import kotlinx.android.synthetic.main.activity_viewsharedrecipe.*
 import sa.ksu.gpa.saleem.R
 import sa.ksu.gpa.saleem.profile.Profile
 
-class viewSharedRecipeActivity : AppCompatActivity(){
+
+class viewSharedRecipeActivity : AppCompatActivity(), BaseSliderView.OnSliderClickListener {
 
     private lateinit var db: FirebaseFirestore
     private lateinit var recyclerView:RecyclerView
     private lateinit var recipeList:ArrayList<RecipeModel>
-    private var gridLayout:GridLayoutManager?=null
+    private var gridLayout:StaggeredGridLayoutManager?=null
     private lateinit var recipesAdapter: RecipesAdapter
+    private lateinit var slider: SliderLayout
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_viewsharedrecipe)
         db = FirebaseFirestore.getInstance()
+        slider= findViewById(R.id.slider)
         recipeList= ArrayList()
+
         initView()
+        initSlider()
+
         bottomNavigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home-> {
@@ -80,9 +92,9 @@ class viewSharedRecipeActivity : AppCompatActivity(){
         recipesAdapter= RecipesAdapter(applicationContext,recipeList!!)
         getRecipes()
 
-        gridLayout= GridLayoutManager(this,2)
+        gridLayout= StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
         recyclerView.layoutManager=gridLayout
-        recyclerView?.addItemDecoration(GridSpacingItemDecoration(2, dpToPx(10), true))
+        recyclerView?.addItemDecoration(GridSpacingItemDecoration(2, dpToPx(6), true))
         recyclerView?.setItemAnimator(DefaultItemAnimator())
         recyclerView.adapter=recipesAdapter
         recyclerView.setHasFixedSize(true)
@@ -113,6 +125,37 @@ class viewSharedRecipeActivity : AppCompatActivity(){
 
     }
 
+    private fun initSlider() {
+        val requestOptions = RequestOptions()
+        requestOptions.centerCrop()
+
+        db.collection("Recipes").limit(4).get().addOnSuccessListener { documents ->
+            for (document in documents) {
+                val textSliderView = TextSliderView(this)
+
+                var name =document.get("name").toString()
+                var image =document.get("image").toString()
+                textSliderView
+                        .description(name)
+                        .image(image)
+                        .setRequestOption(requestOptions)
+                        .setProgressBarVisible(true)
+                        .setOnSliderClickListener(this);
+
+                slider.addSlider(textSliderView)
+            }
+
+
+        }.addOnFailureListener{
+            Log.d("Exception",""+it.toString())
+        }
+        slider.setPresetTransformer(SliderLayout.Transformer.ZoomOutSlide)
+        slider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom)
+        slider.setCustomAnimation(DescriptionAnimation())
+        slider.setDuration(3000)
+    }
+
+
     class GridSpacingItemDecoration(private val spanCount: Int, private val spacing: Int, private val includeEdge: Boolean) : ItemDecoration() {
         override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
             val position = parent.getChildAdapterPosition(view) // item position
@@ -140,6 +183,9 @@ class viewSharedRecipeActivity : AppCompatActivity(){
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp.toFloat(), r.displayMetrics))
     } //end dpToPx
 
+    override fun onSliderClick(slider: BaseSliderView?) {
+        //
+    }
 
 
 }

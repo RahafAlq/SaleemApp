@@ -89,7 +89,6 @@ class ScanActivity : AppCompatActivity() ,ZXingScannerView.ResultHandler{
         mAlertDialog.fat.setText(fat)
 
         mAlertDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
-        mAlertDialog.productNumberOfServingsEditText
         //cancel button click of custom layout
         mDialogView.cancel.setOnClickListener{
             mAlertDialog.dismiss()

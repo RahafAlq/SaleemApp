@@ -15,11 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AddFoodActivity"></activity>
         <activity android:name=".recipe.SharedRecipe.viewSharedRecipeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".recipe.sharedRecipeInformaion"></activity>
         <activity android:name=".recipe.ShareRecipeFirst">
@@ -50,7 +46,13 @@
 
         </activity>
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".register.registerThreeActivity"
             android:parentActivityName=".register.registerTwoActivity"/>
         <activity android:name=".ScanActivity" />

@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                 .create()
         )
         speedDialView.addActionItem(
-            SpeedDialActionItem.Builder(10013, R.drawable.ic_water)
+            SpeedDialActionItem.Builder(10013, R.drawable.ic_white_dish)
                 .setFabBackgroundColor(ResourcesCompat.getColor(getResources(), R.color.colorBlue, getTheme()))
                 .setFabImageTintColor(ResourcesCompat.getColor(getResources(), R.color.white, getTheme()))
                 .create()

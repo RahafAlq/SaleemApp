@@ -13,53 +13,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddFoodActivity"></activity>
-        <activity android:name=".recipe.SharedRecipe.viewSharedRecipeActivity">
-
-        </activity>
-        <activity android:name=".recipe.sharedRecipeInformaion"></activity>
-        <activity android:name=".recipe.ShareRecipeFirst">
-
-
-        </activity>
-        <activity android:name=".register.registerOneActivity"></activity>
-        <activity android:name=".profile.Profile"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".profile.editProf"
-            android:parentActivityName=".profile.fragmentOne"/>
-
-
-        <activity android:name=".profile.fragmentTwo" />
-        <activity android:name=".profile.fragmentOne" />
-
-        <activity android:name=".loginn" >
-
-        </activity>
-        <activity android:name=".register.registerFourActivity"
-            android:parentActivityName=".register.registerThreeActivity"/>
-        <activity
-            android:name=".SplashScreenActivity"
-            android:noHistory="true"
-            android:theme="@style/splashTheme">
-
-
-
-        </activity>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".Timer.TimerPlay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register.registerThreeActivity"
-            android:parentActivityName=".register.registerTwoActivity"/>
+        <activity android:name=".Timer.TimerSettings">
+
+        </activity>
+        <activity android:name=".AddFoodActivity" />
+        <activity android:name=".recipe.SharedRecipe.viewSharedRecipeActivity" />
+        <activity android:name=".recipe.sharedRecipeInformaion" />
+        <activity android:name=".recipe.ShareRecipeFirst" />
+        <activity android:name=".register.registerOneActivity" />
+        <activity
+            android:name=".profile.Profile"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".profile.editProf"
+            android:parentActivityName=".profile.fragmentOne" />
+        <activity android:name=".profile.fragmentTwo" />
+        <activity android:name=".profile.fragmentOne" />
+        <activity android:name=".loginn" />
+        <activity
+            android:name=".register.registerFourActivity"
+            android:parentActivityName=".register.registerThreeActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:noHistory="true"
+            android:theme="@style/splashTheme" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".register.registerThreeActivity"
+            android:parentActivityName=".register.registerTwoActivity" />
         <activity android:name=".ScanActivity" />
         <activity
             android:name=".register.registerTwoActivity"
-            android:parentActivityName=".register.registerOneActivity"/>
-
+            android:parentActivityName=".register.registerOneActivity" />
     </application>
 
 </manifest>

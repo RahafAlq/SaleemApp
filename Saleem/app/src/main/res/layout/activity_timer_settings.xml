@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer.TimerSettings"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="إعدادات المؤقت"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#639865"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الإستعداد"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+
+
+            <EditText
+                android:id="@+id/timer_prepaer"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="number"
+
+
+                android:hint="5">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:text="ثانية"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#99C3C4BC">
+
+    </View>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الحركة"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+
+
+            <EditText
+                android:id="@+id/timer_active"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:hint="40">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:text="ثانية"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#99C3C4BC">
+
+    </View>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الراحة"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+
+
+            <EditText
+                android:id="@+id/timer_rest"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:hint="20">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:text="ثانية"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#99C3C4BC">
+
+    </View>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الدورات"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/timer_round"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:hint="1">
+
+            </EditText>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#99C3C4BC">
+
+    </View>
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="الراحة بين الدورات"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+
+
+            <EditText
+                android:id="@+id/timer_rest_round"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:hint="60">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:text="ثانية"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:id="@+id/timer_start_timer_button"
+        android:alpha="0.5"
+        android:backgroundTint="#59E7A2"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#F8F8F8"
+        android:textStyle="bold"
+        android:text="ابدأ"/>
+</LinearLayout>
